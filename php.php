@@ -21,7 +21,7 @@ foreach ($students as $s) {
     $avg = 0;
     foreach ($s["Atzīmes"] as $a)
         $avg += $a;
-    echo $s["Vārds"] . " Vidējā atzīme: " . $avg / 3 . "\n";
+    echo $s["Vārds"] . " Vidējā atzīme: " . $avg / count($s["Atzīmes"]) . "\n";
 }
 
 
