@@ -77,4 +77,13 @@ foreach ($arr as $a){
     echo $a;
     echo ($a == $arr[count($arr) - 1]) ? "." : ", ";
 }
+
+echo "\n\n";
+
+//---[7 UZD]---
+$people = [
+    ["name" => "Jānis", "age" => 20, "email" => "janis@janis.lv", "languages" => ["PHP", "Python", "Java"]],
+    ["name" => "Antra", "age" => 34, "email" => "antra@antra.com", "languages" => ["HTML", "Javascript", "SQL"]]
+];
+
 ?>
