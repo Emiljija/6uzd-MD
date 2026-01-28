@@ -1,11 +1,16 @@
 <?php
 
+//---[1 UZD]---
 $fruits = ["Ābols", "Banāns", "Ķirsis", "Dateles"];
 echo $fruits[1] . "\n";
 
+
+//---[2 UZD]---
 $ages = ["Alise" => 30, "Bobs" => 25, "Čārlijs" => 35];
 echo $ages["Bobs"] . "\n\n";
 
+
+//---[3 UZD]---
 $students = [
     ["Vārds" => "Džons", "Vecums" => 20, "Atzīmes" => [90, 85, 88]],
     ["Vārds" => "Džena", "Vecums" => 22, "Atzīmes" => [92, 80, 84]],
@@ -19,12 +24,18 @@ foreach ($students as $s) {
     echo $s["Vārds"] . " Vidējā atzīme: " . $avg / 3 . "\n";
 }
 
+
+//---[4 UZD]---
 foreach ($students as $s) {
     echo "\nVārds: " . $s["Vārds"] . ", Vecums: " . $s["Vecums"] . ", Atzīmes: ";
     foreach ($s["Atzīmes"] as $a)
         echo $a . " ";
 }
 
+echo "\n\n";
+
+
+//---[5 UZD]---
 $assocAnimal = [
     "name" => "lauva",
     "mass" => 250,
@@ -57,9 +68,13 @@ foreach ($animals as $a) {
     var_dump($a);
 }
 
+
+//---[6 UZD]---
 $arr = ['red', 'blue', 'green', 'yellow'];
 
 echo "\n\nColors: ";
-foreach ($arr as $a)
-    echo $a . ", ";
+foreach ($arr as $a){
+    echo $a;
+    echo ($a == $arr[count($arr) - 1]) ? "." : ", ";
+}
 ?>
